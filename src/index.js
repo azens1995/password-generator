@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
 
-const PORT = 3000;
+const PORT = 8080;
 
 app.get('/', (req, res) => {
   const message = 'Server is up and running';
