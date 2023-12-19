@@ -8,7 +8,7 @@ app.use(express.urlencoded());
 
 const PORT = 3000;
 
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
   const message = 'Server is up and running';
   log.info(message);
   res.json({
